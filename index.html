@@ -280,13 +280,17 @@ footer a { color: var(--muted); }
     <div>
       <span class="eyebrow">Beta</span>
       <h2 style="margin-top:12px">Invites are open</h2>
-      <p style="margin-top:14px;color:var(--muted)">Android testers can have a build today; iPhone follows as soon as TestFlight is set up. Everything is unlocked for testers. Email your phone model and which platform you're on, and report a problem from inside the app — the ride comes with it.</p>
-      <div class="plat"><span class="pill">Android · now</span><span class="pill">iPhone · TestFlight soon</span></div>
-      <!-- When the links exist: replace the pills above with
+      <p style="margin-top:14px;color:var(--muted)">Android: download the build below, allow the install when your browser asks, and ride. iPhone follows as soon as TestFlight is set up — email us and you'll get the invite. Everything is unlocked for testers, and the build runs until 4 December 2026. Report a problem from inside the app; the ride comes with it.</p>
+      <div class="plat"><span class="pill">Android 10 and up · 64 MB</span><span class="pill">iPhone · TestFlight soon</span></div>
+      <!-- When the links exist:
            <a class="btn ghost" href="https://testflight.apple.com/join/XXXXXXXX">Join on TestFlight</a>
            <a class="btn ghost" href="https://play.google.com/apps/internaltest/XXXXXXXXXXXX">Join on Google Play</a> -->
     </div>
-    <a class="btn" href="mailto:support@tracetimer.com?subject=TRACE%20beta&body=Phone%20model%3A%0APlatform%3A%20iPhone%20%2F%20Android%0AWhat%20I%20ride%20or%20drive%3A%0A">Email support@tracetimer.com</a>
+    <div style="display:grid;gap:10px">
+      <!-- Always the newest build: tool/beta_publish.sh in the app repo uploads each drop under this name. -->
+      <a class="btn" href="https://github.com/Stonewallkid/tracetimer.com/releases/latest/download/trace-beta.apk">Download the Android beta</a>
+      <a class="btn ghost" href="mailto:support@tracetimer.com?subject=TRACE%20beta&body=Phone%20model%3A%0APlatform%3A%20iPhone%20%2F%20Android%0AWhat%20I%20ride%20or%20drive%3A%0A">Email support@tracetimer.com</a>
+    </div>
   </div>
 </section>
 

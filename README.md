@@ -42,7 +42,11 @@ then `media/reel.mp4` plus a poster frame `media/reel.jpg`. In
 in the comment beside it. Keep the file under ~20 MB; GitHub serves it
 straight from the repository.
 
-## Beta links
+## Beta builds
 
-When TestFlight and Play links exist, the comment in the `#beta` section
-of `index.html` shows the two buttons to swap in for the pills.
+The Android APK is a GitHub Release on this repo, always uploaded under
+the asset name `trace-beta.apk`, so the site's download button
+(`releases/latest/download/trace-beta.apk`) never changes. In the app repo,
+`tool/beta_build.sh <date>` cuts a build and `tool/beta_publish.sh` uploads
+it here. When TestFlight and Play links exist, the comment in the `#beta`
+section of `index.html` shows the buttons to add.
