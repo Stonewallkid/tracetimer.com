@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>r/TraceTimer banner</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* 1920 x 384: Reddit's community banner. Phones crop the sides and the
+   top, so everything that matters sits inside the middle 1500 px and the
+   vertical centre. Same palette and faces as tracetimer.com. */
+html, body { margin:0; width:1920px; height:384px; overflow:hidden; background:#0B0D10; color:#F2F5F7; font-family:"Barlow",system-ui,sans-serif; }
+.bg { position:absolute; inset:0;
+  background: radial-gradient(55% 140% at 76% 55%, rgba(0,224,164,.16), transparent 62%),
+              linear-gradient(90deg, #0B0D10 0%, #11161c 50%, #0B0D10 100%); }
+.road { position:absolute; left:47%; width:70%; bottom:-70px; height:300px;
+  transform:perspective(520px) rotateX(56deg);
+  background: repeating-linear-gradient(90deg, transparent 0 49.4%, #cfd6dc 49.4% 50.6%, transparent 50.6% 100%),
+              linear-gradient(180deg, #252c34, #0d1115);
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 45%); opacity:.5; }
+.wrap { position:absolute; inset:0; display:flex; align-items:center; padding:0 150px; gap:52px; }
+.logo { width:196px; height:196px; border-radius:40px; flex:none; box-shadow:0 20px 60px rgba(0,0,0,.6); }
+.brand { display:flex; flex-direction:column; }
+.eyebrow { font-family:"Rajdhani"; font-weight:600; font-size:19px; letter-spacing:.34em; color:#95A1AC; margin:0 0 6px 6px; }
+h1 { font-family:"Rajdhani"; font-weight:700; font-size:100px; letter-spacing:.26em; line-height:.9; margin:0; }
+.tag { font-size:31px; color:#95A1AC; margin:16px 0 0 6px; font-weight:500; }
+.tag b { color:#F2F5F7; font-weight:600; }
+.url { font-family:"Rajdhani"; font-weight:600; font-size:24px; letter-spacing:.12em; color:#00E0A4; margin:12px 0 0 6px; }
+.url span { color:#95A1AC; letter-spacing:.06em; font-weight:500; }
+.right { margin-left:auto; display:flex; flex-direction:column; align-items:flex-end; gap:16px; }
+.tiles { display:flex; gap:10px; }
+.tile { background:rgba(0,0,0,.5); border-radius:12px; padding:10px 15px 10px; min-width:118px; }
+.tile .l { display:flex; align-items:center; gap:6px; font-family:"Rajdhani"; font-weight:700; font-size:13px; letter-spacing:.16em; color:rgba(255,255,255,.6); }
+.tile .l i { width:9px; height:9px; border-radius:2px; display:inline-block; }
+.tile .v { font-family:"Rajdhani"; font-weight:600; font-size:30px; line-height:1.05; color:#fff; font-variant-numeric:tabular-nums; }
+.tile .u { height:3px; width:30px; border-radius:2px; margin-top:6px; }
+.row { display:flex; align-items:flex-end; gap:34px; }
+.run { background:rgba(0,0,0,.55); border-radius:14px; padding:12px 16px; display:grid; gap:6px; width:200px; }
+.run .l { font-family:"Rajdhani"; font-weight:700; font-size:14px; letter-spacing:.16em; color:rgba(255,255,255,.65); }
+.run .t { font-family:"Rajdhani"; font-weight:600; font-size:46px; line-height:1; color:#00E0A4; }
+.run .bar { height:4px; border-radius:2px; background:rgba(255,255,255,.18); overflow:hidden; }
+.run .bar i { display:block; height:100%; width:78%; background:#00E0A4; }
+.speed { display:flex; align-items:baseline; gap:10px; }
+.speed .n { font-family:"Rajdhani"; font-weight:300; font-size:150px; line-height:.85; color:#fff; text-shadow:0 4px 18px rgba(0,0,0,.6); }
+.speed .u { font-family:"Rajdhani"; font-weight:600; font-size:20px; letter-spacing:.24em; color:rgba(255,255,255,.75); }
+</style></head>
+<body>
+<div class="bg"></div><div class="road"></div>
+<div class="wrap">
+  <img class="logo" src="../img/icon-512.png" alt="">
+  <div class="brand">
+    <div class="eyebrow">PERFORMANCE RECORDER · MOTORCYCLES AND CARS</div>
+    <h1>TRACE</h1>
+    <div class="tag"><b>Your 0–60, timed.</b> Your run, on film. Nothing leaves your phone.</div>
+    <div class="url">tracetimer.com <span>· beta now on Android · iPhone next</span></div>
+  </div>
+  <div class="right">
+    <div class="tiles">
+      <div class="tile"><div class="l"><i style="background:#00E0A4"></i>RIDE</div><div class="v">12:41</div><div class="u" style="background:#00E0A4"></div></div>
+      <div class="tile"><div class="l"><i style="background:#2C7BE5"></i>DIST</div><div class="v">8.2 mi</div><div class="u" style="background:#2C7BE5"></div></div>
+      <div class="tile"><div class="l"><i style="background:#FFB020"></i>HDG</div><div class="v">NE 47°</div><div class="u" style="background:#FFB020"></div></div>
+    </div>
+    <div class="row">
+      <div class="run"><div class="l">0–60</div><div class="t">3.34</div><div class="bar"><i></i></div></div>
+      <div class="speed"><span class="n">61</span><span class="u">MPH</span></div>
+    </div>
+  </div>
+</div>
+</body></html>
