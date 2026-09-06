@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRACE Support</title>
+<meta name="description" content="Help with TRACE: how to record, why a number reads the way it does, what has and has not been tested, and how to reach us.">
+<meta name="theme-color" content="#0B0D10">
+<link rel="icon" href="../img/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root { --ground:#0B0D10; --surface:#14181D; --rule:#262E36; --text:#F2F5F7; --muted:#95A1AC; --green:#00E0A4; --amber:#FFB020;
+  --display:"Rajdhani","Barlow Condensed","Arial Narrow",system-ui,sans-serif; --body:"Barlow","Helvetica Neue",Arial,system-ui,sans-serif; }
+* { box-sizing: border-box; }
+html { color-scheme: dark; }
+body { margin:0; background:var(--ground); color:var(--text); font-family:var(--body); font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+a { color:var(--green); text-decoration:none; } a:hover { text-decoration:underline; text-underline-offset:3px; }
+.wrap { width:min(760px, 100% - 40px); margin-inline:auto; }
+.top { display:flex; align-items:center; gap:11px; padding:18px 0; border-bottom:1px solid var(--rule); }
+.top img { width:30px; height:30px; border-radius:7px; } .top b { font-family:var(--display); font-weight:700; font-size:18px; letter-spacing:.3em; }
+.top span { color:var(--muted); margin-left:auto; font-size:14px; }
+h1 { font-family:var(--display); font-weight:700; font-size:40px; line-height:1.05; margin:40px 0 8px; }
+h2 { font-family:var(--display); font-weight:600; font-size:22px; margin:36px 0 8px; }
+p, li { max-width:62ch; color:var(--muted); } p b, li b { color:var(--text); font-weight:600; }
+.contact { margin-top:16px; padding:18px 20px; background:var(--surface); border:1px solid var(--rule); border-radius:12px; }
+.contact p { color:var(--text); }
+.btn { display:inline-flex; margin-top:10px; padding:11px 16px; border-radius:10px; font-family:var(--display); font-weight:700; font-size:14px; letter-spacing:.12em; text-transform:uppercase; background:var(--green); color:#00201A; }
+.btn:hover { text-decoration:none; filter:brightness(1.08); }
+footer { border-top:1px solid var(--rule); margin-top:48px; padding:24px 0 40px; color:var(--muted); font-size:14px; display:flex; gap:22px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<header class="wrap top"><a href="../" style="display:flex;align-items:center;gap:11px;color:inherit"><img src="../img/icon-192.png" alt=""><b>TRACE</b></a><span>Support</span></header>
+<main class="wrap">
+<h1>Support</h1>
+<div class="contact">
+  <p><b>Something wrong?</b> In the app, open Settings → <b>Report a problem</b>, or a ride's export sheet → <b>Report a problem with this ride</b>. It writes an email to us with the app version, your phone and — if you leave the switch on — the ride, so we can see what you saw.</p>
+  <a class="btn" href="mailto:support@tracetimer.com">support@tracetimer.com</a>
+</div>
+
+<h2>Why does a run say POOR?</h2>
+<p>Confidence describes the data behind a run, not how you rode. It rates how clean the GPS was through the run — the fix interval, how much had to be interpolated, whether the launch was measured or estimated. The time is still the best available reading; it just carries more uncertainty than a GOOD one.</p>
+
+<h2>My quarter mile is slower than my friend's timer</h2>
+<p>Almost certainly rollout. Drag strips start the clock after the car has rolled about a foot through the staging beam, and consumer timers default to matching that. Timed from a true standstill the same run reads roughly a quarter of a second slower. Settings has a <b>1 ft rollout</b> switch; on, your numbers compare with strip slips and other timers, and every stored result re-times when you change it.</p>
+
+<h2>Why is a run missing?</h2>
+<p>A run only exists when the whole of it was measured. Anything across a GPS gap, a stop the phone never saw as a stop, or a launch the app could not place is left out rather than guessed. The ride's metrics screen lists the runs it found; if one you are sure of is not there, report it with the ride attached — that is exactly the case we want to see.</p>
+
+<h2>How does video work?</h2>
+<p>Tap <b>RECORD VIDEO</b> on the ride screen, or turn on <b>Start video automatically</b> in Settings. The camera view fills the screen for about a minute so you can aim the phone, then gets out of the way. The screen stays on while video records because the lock screen ends the camera. In direct sun the phone may shed the camera to protect itself; when that happens the ride keeps recording and <b>RECORD AGAIN</b> starts a new clip once it has cooled. Pausing the ride ends the clip.</p>
+
+<h2>Why does the app want Battery Saver off?</h2>
+<p>Battery Saver lets Android throttle background work, and a ride is exactly that: GPS every second for the length of a ride. Throttled, fixes arrive late or not at all, and a ride with silent gaps in it is worse than no ride, because you will trust it.</p>
+
+<h2>What has not been tested?</h2>
+<p>Everything measured so far came from one motorcycle, one phone, one mount. Cars, racetracks and anything under about 12 mph have not been checked against a reference instrument yet. The app's Help screen has the full accuracy statement and is updated as measurements land.</p>
+
+<h2>Where is my data?</h2>
+<p>On your phone. There is no account, no upload and no server. Storage in Settings exports the whole record as one archive and restores it later — restore only ever adds, so it cannot destroy rides already on the phone. <a href="../privacy/">The privacy policy</a> has the rest.</p>
+</main>
+<footer class="wrap"><span>© 2026 TRACE</span><a href="../">tracetimer.com</a><a href="../privacy/">Privacy</a></footer>
+</body>
+</html>
