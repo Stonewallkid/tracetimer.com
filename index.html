@@ -280,16 +280,19 @@ footer a { color: var(--muted); }
     <div>
       <span class="eyebrow">Beta</span>
       <h2 style="margin-top:12px">Invites are open</h2>
-      <p style="margin-top:14px;color:var(--muted)">Android: download the build below, allow the install when your browser asks, and ride. iPhone follows as soon as TestFlight is set up — email us and you'll get the invite. Everything is unlocked for testers, and the build runs until December 4, 2026. Leave feedback from inside the app after any ride, good or bad; the ride's recording comes with it.</p>
+      <p style="margin-top:14px;color:var(--muted)"><b style="color:var(--text)">Android, through Google Play — three taps:</b> 1. <a href="https://groups.google.com/g/trace-beta">join the TRace beta group</a> with the Google account on your phone. 2. <a href="https://play.google.com/apps/testing/com.trace.rideapp">opt in to the test</a>. 3. Install TRace from the Play link it gives you. Updates then arrive on their own. Or skip Play and <a href="https://github.com/Stonewallkid/tracetimer.com/releases/latest/download/trace-beta.apk">download the build</a> directly; both installs update over each other.</p>
+      <p style="margin-top:12px;color:var(--muted)">iPhone follows as soon as TestFlight is set up — email us and you'll get the invite. Everything is unlocked for testers, and the build runs until December 4, 2026. Leave feedback from inside the app after any ride, good or bad; the ride's recording comes with it.</p>
       <p style="margin-top:12px;color:var(--muted)"><b style="color:var(--text)">Got a RaceBox, Dragy or VBOX?</b> You're the tester we need most. Run it alongside the phone, export its session (CSV) for the same ride, and attach it to the report email. Every number on this page was measured that way, on one bike — your machine and your phone are how it gets measured on more. Reference files are used for the comparison and nothing else.</p>
       <div class="plat"><span class="pill">Android 10 and up · 64 MB</span><span class="pill">iPhone · TestFlight soon</span></div>
-      <!-- When the links exist:
-           <a class="btn ghost" href="https://testflight.apple.com/join/XXXXXXXX">Join on TestFlight</a>
-           <a class="btn ghost" href="https://play.google.com/apps/internaltest/XXXXXXXXXXXX">Join on Google Play</a> -->
+      <!-- When the link exists:
+           <a class="btn ghost" href="https://testflight.apple.com/join/XXXXXXXX">Join on TestFlight</a> -->
     </div>
     <div style="display:grid;gap:10px">
       <!-- Always the newest build: tool/beta_publish.sh in the app repo uploads each drop under this name. -->
-      <a class="btn" href="https://github.com/Stonewallkid/tracetimer.com/releases/latest/download/trace-beta.apk">Download the Android beta</a>
+      <!-- The closed test on Google Play: the group first (that is what Play counts), then the opt-in. -->
+      <a class="btn" href="https://groups.google.com/g/trace-beta">1 · Join the beta group</a>
+      <a class="btn" href="https://play.google.com/apps/testing/com.trace.rideapp">2 · Opt in on Google Play</a>
+      <a class="btn ghost" href="https://github.com/Stonewallkid/tracetimer.com/releases/latest/download/trace-beta.apk">Download the Android beta directly</a>
       <a class="btn ghost" href="mailto:support@tracetimer.com?subject=TRace%20beta&body=Phone%20model%3A%0APlatform%3A%20iPhone%20%2F%20Android%0AWhat%20I%20ride%20or%20drive%3A%0A">Email support@tracetimer.com</a>
     </div>
   </div>
