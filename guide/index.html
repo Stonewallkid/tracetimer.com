@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Getting started with TRace</title>
+<meta name="description" content="A tester's first hour with TRace: the first ride, your times, a clip with the numbers on it, a look of your own, and how to send what you saw.">
+<meta name="theme-color" content="#0B0D10">
+<link rel="icon" href="../img/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root { --ground:#0B0D10; --surface:#14181D; --rule:#262E36; --text:#F2F5F7; --muted:#95A1AC; --green:#00E0A4;
+  --display:"Rajdhani","Barlow Condensed","Arial Narrow",system-ui,sans-serif; --body:"Barlow","Helvetica Neue",Arial,system-ui,sans-serif; }
+* { box-sizing: border-box; }
+html { color-scheme: dark; scroll-behavior: smooth; }
+body { margin:0; background:var(--ground); color:var(--text); font-family:var(--body); font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+a { color:var(--green); text-decoration:none; } a:hover { text-decoration:underline; text-underline-offset:3px; }
+.wrap { width:min(960px, 100% - 40px); margin-inline:auto; }
+.top { display:flex; align-items:center; gap:11px; padding:18px 0; border-bottom:1px solid var(--rule); }
+.top img { width:30px; height:30px; border-radius:7px; } .top b { font-family:var(--display); font-weight:700; font-size:18px; letter-spacing:.3em; }
+.top span { color:var(--muted); margin-left:auto; font-size:14px; }
+h1 { font-family:var(--display); font-weight:700; font-size:40px; line-height:1.05; margin:40px 0 8px; }
+.lead { color:var(--muted); max-width:62ch; margin:0 0 12px; }
+.toc { display:flex; flex-wrap:wrap; gap:8px 14px; margin:18px 0 8px; padding:0; list-style:none; font-size:14px; }
+.toc a { color:var(--muted); } .toc a:hover { color:var(--green); }
+.step { display:grid; grid-template-columns: 220px 1fr; gap:28px; align-items:start; padding:34px 0; border-top:1px solid var(--rule); }
+.shot img { width:220px; height:auto; border-radius:14px; border:1px solid var(--rule); background:var(--surface); display:block; }
+.n { font-family:var(--display); font-weight:700; font-size:26px; color:var(--green); line-height:1; }
+h2 { font-family:var(--display); font-weight:600; font-size:24px; margin:2px 0 10px; }
+p { max-width:62ch; color:var(--muted); margin:0 0 12px; } p b { color:var(--text); font-weight:600; }
+@media (max-width:640px) { .step { grid-template-columns:1fr; gap:14px; } .shot img { width:180px; } }
+.cta { margin-top:30px; padding:18px 20px; background:var(--surface); border:1px solid var(--rule); border-radius:12px; }
+.cta p { color:var(--text); }
+.btn { display:inline-flex; margin-top:10px; padding:11px 16px; border-radius:10px; font-family:var(--display); font-weight:700; font-size:14px; letter-spacing:.12em; text-transform:uppercase; background:var(--green); color:#00201A; }
+.btn:hover { text-decoration:none; filter:brightness(1.08); }
+footer { border-top:1px solid var(--rule); margin-top:48px; padding:24px 0 40px; color:var(--muted); font-size:14px; display:flex; gap:22px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<header class="wrap top"><a href="../" style="display:flex;align-items:center;gap:11px;color:inherit"><img src="../img/icon-192.png" alt=""><b>TRace</b></a><span>Getting started</span></header>
+<main class="wrap">
+<h1>Getting started</h1>
+<p class="lead">From the first ride to a clip with the numbers on it. Ten steps; the pictures are the real screens. The same guide is in the app under Settings → Getting started.</p>
+<ul class="toc">
+  <li><a href="#install">1. Get it on your phone</a></li>
+  <li><a href="#home">2. Start a ride</a></li>
+  <li><a href="#recording">3. While you ride</a></li>
+  <li><a href="#metrics">4. Your times</a></li>
+  <li><a href="#player">5. Watch a run on film</a></li>
+  <li><a href="#look">6. Pick a look</a></li>
+  <li><a href="#arrange">7. Arrange the picture</a></li>
+  <li><a href="#export">8. Export and share</a></li>
+  <li><a href="#camera">9. A clip from another camera</a></li>
+  <li><a href="#feedback">10. Tell us what you saw</a></li>
+</ul>
+<section class="step" id="install">
+  <div class="shot"><img src="img/install.jpg" alt="Get it on your phone" loading="lazy" width="360" height="780"></div>
+  <div class="words">
+    <span class="n">1</span>
+    <h2>Get it on your phone</h2>
+<p>Android testers: the download on tracetimer.com installs straight from the browser. Allow installs from that source once when the phone asks; later builds install over it and keep your rides.</p>
+<p>Google Play testers: join the tester group and take the opt-in link with the same Google account your phone is signed into, or Play says the app is not available.</p>
+<p>Open the app and give it Location. Camera and Microphone are only asked for the first time you record video.</p>
+  </div>
+</section>
+<section class="step" id="home">
+  <div class="shot"><img src="img/home.jpg" alt="Start a ride" loading="lazy" width="360" height="780"></div>
+  <div class="words">
+    <span class="n">2</span>
+    <h2>Start a ride</h2>
+<p>Mount the phone where it can see the sky and will not move. Turn Battery Saver off — it throttles the GPS, and a ride with silent gaps is worse than no ride.</p>
+<p>Tap <b>START RIDE</b>. The app records GPS once a second and the motion sensors two hundred times a second, all on the phone. Nothing is uploaded anywhere.</p>
+  </div>
+</section>
+<section class="step" id="recording">
+  <div class="shot"><img src="img/recording.jpg" alt="While you ride" loading="lazy" width="360" height="780"></div>
+  <div class="words">
+    <span class="n">3</span>
+    <h2>While you ride</h2>
+<p>The big number is your speed; the ride clock and distance sit under it. <b>PAUSE</b> at a fuel stop, <b>STOP</b> when you are done.</p>
+<p><b>RECORD VIDEO</b> starts the camera for this ride: a minute of viewfinder to aim the phone, then the screen goes dark to keep it cool. The red <b>REC</b> pill shows the clip rolling; tap it to see the camera again. Heat ends a clip, never the ride — <b>RECORD AGAIN</b> starts a new one once the phone has cooled.</p>
+  </div>
+</section>
+<section class="step" id="metrics">
+  <div class="shot"><img src="img/metrics.jpg" alt="Your times" loading="lazy" width="360" height="780"></div>
+  <div class="words">
+    <span class="n">4</span>
+    <h2>Your times</h2>
+<p><b>STOP</b>, and the ride opens on <b>METRICS</b>: every standing start and rolling window the analysis found — 0–60, the quarter mile, 20–60, your own custom ones — each with a confidence word beside it. A run that is missing was not measured, never guessed.</p>
+<p><b>MAP</b> shows the route with each run lit along it. <b>GRAPH</b> is the speed trace. Tap any run for its detail.</p>
+  </div>
+</section>
+<section class="step" id="player">
+  <div class="shot"><img src="img/player.jpg" alt="Watch a run on film" loading="lazy" width="360" height="780"></div>
+  <div class="words">
+    <span class="n">5</span>
+    <h2>Watch a run on film</h2>
+<p>Tap a run's time and its clip opens cut to that run, three seconds either side. The numbers sit over the picture: speed, ride clock, distance, heading, the run counting up on its own card, and a mini map that follows you with your heading up.</p>
+<p>The <b>VIDEOS</b> tab holds every clip from every ride.</p>
+  </div>
+</section>
+<section class="step" id="look">
+  <div class="shot"><img src="img/look.jpg" alt="Pick a look" loading="lazy" width="360" height="780"></div>
+  <div class="words">
+    <span class="n">6</span>
+    <h2>Pick a look</h2>
+<p>The sliders icon opens <b>WHAT TO SHOW</b>: which numbers, which runs, and the <b>LOOK</b> — Iron, <b>GTA</b>, TRace, Clean, Neon, Candy.</p>
+<p><b>CUSTOMISE</b> opens the editor over the picture, so every change shows on the clip as you make it: the layout, the lettering, seven colours, corners, rim, outline, glow. <b>SAVE</b> keeps it under a name of your own. The share icon sends it as a small file; a friend adds it with <b>IMPORT</b>.</p>
+  </div>
+</section>
+<section class="step" id="arrange">
+  <div class="shot"><img src="img/arrange.jpg" alt="Arrange the picture" loading="lazy" width="360" height="780"></div>
+  <div class="words">
+    <span class="n">7</span>
+    <h2>Arrange the picture</h2>
+<p><b>ARRANGE THE PICTURE</b> lets you drag every block where you want it and pinch to size it — the mark included, though it never goes smaller than 70% or off.</p>
+<p><b>FIT</b> puts everything clear of the bars YouTube Shorts, Instagram Reels or TikTok draw over a video, in one tap. Save as My layout keeps your own arrangement; <b>RESET</b> puts the corners back. Portrait and landscape clips each keep their own.</p>
+  </div>
+</section>
+<section class="step" id="export">
+  <div class="shot"><img src="img/export.jpg" alt="Export and share" loading="lazy" width="360" height="780"></div>
+  <div class="words">
+    <span class="n">8</span>
+    <h2>Export and share</h2>
+<p><b>TRIM</b> sets the ends of the clip; <b>USE THIS RUN</b> cuts it to the run on the playhead. <b>EXPORT</b> burns the numbers into the picture, sound included, with the TRace mark on it.</p>
+<p>When it is done: <b>WATCH</b> it, <b>SAVE</b> it to the phone's gallery, or <b>SHARE</b> it straight to wherever it is going.</p>
+  </div>
+</section>
+<section class="step" id="camera">
+  <div class="shot"><img src="img/camera.jpg" alt="A clip from another camera" loading="lazy" width="360" height="780"></div>
+  <div class="words">
+    <span class="n">9</span>
+    <h2>A clip from another camera</h2>
+<p>A GoPro or Insta360 clip goes in from the ride's <b>VIDEO</b> tab: <b>IMPORT A CLIP FROM ANOTHER CAMERA</b>. A GoPro file lines itself up on its own GPS.</p>
+<p>An Insta360 export carries no clock, so tap <b>ATTACH…</b> and pick the original .insv, or its small .lrv proxy — the app finds where the export sits by its sound and its motion. If the speedo looks a frame out, <b>ALIGN</b> nudges it and <b>SAVE</b> keeps it.</p>
+  </div>
+</section>
+<section class="step" id="feedback">
+  <div class="shot"><img src="img/feedback.jpg" alt="Tell us what you saw" loading="lazy" width="360" height="780"></div>
+  <div class="words">
+    <span class="n">10</span>
+    <h2>Tell us what you saw</h2>
+<p>Settings → Leave feedback/data writes an email with the app version, your phone and, if you leave the switch on, the ride's recording — so we see what you saw. A RaceBox or Dragy file from the same ride, attached to that email, is the most useful thing a tester can send.</p>
+<p>Storage exports the whole record as one archive. Do it after any ride worth keeping: the phone is the only copy.</p>
+  </div>
+</section>
+
+<div class="cta">
+  <p><b>Stuck, or something read wrong?</b> Support has the answers to the common questions, and the address that reaches us.</p>
+  <a class="btn" href="../support/">Support</a>
+</div>
+</main>
+<footer class="wrap"><a href="../">Home</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><span>Written from the app's own guide; the two always match.</span></footer>
+</body>
+</html>
